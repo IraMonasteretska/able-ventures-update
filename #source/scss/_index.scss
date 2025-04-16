@@ -1,0 +1,298 @@
+.herosect {
+    height: calc(100vh - 88px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: rgba(226, 240, 207, 1);
+
+    .sectobj {
+        position: absolute;
+        opacity: 0.2;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .imgwrap {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+    }
+}
+
+.whatwedo {
+    padding: 170px 0 145px;
+}
+
+.whatwedo__leftsect {
+    position: sticky;
+    top: 100px;
+
+    p:not(.secttitle) {
+        color: $secondary;
+        margin-bottom: 50px;
+        max-width: 460px;
+    }
+}
+
+.whatwedo__rightsect {
+    padding-right: 70px;
+}
+
+.wwdobox {
+    display: block;
+    padding: 30px;
+    background: #EEF4EC;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .wwdobox__img {
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            border-radius: 4px;
+        }
+    }
+
+    .wwdobox__descr {
+        h4 {
+            position: relative;
+            padding-top: 30px;
+            font-family: "interstate";
+            font-weight: 600;
+            font-size: 40px;
+            color: rgba(43, 60, 21, 1);
+            margin-bottom: 25px;
+            line-height: normal;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 120px;
+                height: 5px;
+                background: $tertiary;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        p {
+            color: $secondary;
+            margin: 0;
+        }
+    }
+}
+
+.whoweare {
+    padding: 120px 0;
+    background: #E2F0CF;
+}
+
+.whoweare__leftsect {
+    .secttitle {
+        margin-bottom: 60px;
+    }
+
+    p:not(.secttitle) {
+        max-width: 600px;
+        color: $secondary;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.bgpic-mob {
+    display: none;
+}
+
+// font-family: "interstate";
+
+@media(max-width:1599.8px) {
+    .whatwedo,
+    .whoweare {
+        padding: 100px 0;
+    }
+
+    .whoweare__leftsect .secttitle {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:1199.8px) {
+   
+
+    .wwdobox {
+        padding: 15px 15px 25px 15px;
+    }
+
+    .wwdobox .wwdobox__descr h4 {
+        font-size: 32px;
+        padding-top: 15px;
+
+        &::before {
+            height: 3px;
+        }
+    }
+
+    .whatwedo__rightsect {
+        padding-right: 0;
+    }
+
+    .footer__box {
+        padding-left: 25px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .whatwedo, .whoweare {
+        padding: 70px 0;
+    }
+
+    .whatwedo__leftsect {
+        margin-bottom: 40px;
+    }
+
+    .whoweare__leftsect {
+        margin-bottom: 40px;
+    }
+
+    .herosect .imgwrap {
+        width: 40%;
+    }
+    
+}
+
+@media(max-width:767.8px) {
+    .herosect {
+        background: rgba(226, 240, 207, 1);
+        padding: 30px 0;
+        height: auto;
+        min-height: calc(100vh - 88px);
+
+    }
+    
+}
+
+@media(max-width:575.8px) {
+    .herosect {
+        min-height: calc(100vh - 70px);
+        height: auto;
+        background: rgba(226, 240, 207, 1);
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 90px 0 0 0;
+    }
+
+    .bgpic-mob {
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+    }
+
+    .herosect h1 {
+        margin-bottom: 50px;
+    }
+
+    .herosect .sectobj {
+        left: -50px;
+    }
+
+    .whatwedo, .whoweare {
+        padding: 50px 0;
+    }
+
+    .whatwedo__leftsect p:not(.secttitle) {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .wwdobox .wwdobox__descr h4 {
+        font-size: 28px;
+    }
+
+    .wwdobox .wwdobox__img {
+        height: 230px;
+    }
+
+    .whoweare__leftsect .secttitle {
+        margin-bottom: 30px;
+    }
+
+    .herosect .imgwrap {
+        display: none;
+    }
+
+}
+
+@media(max-width:430.8px) and (max-height:668px) {
+    .herosect {
+        padding-top: 60px;
+    }
+
+    .herosect h1 {
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+
+    .bgpic-mob {
+        height: 260px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:800.8px) and (orientation: landscape) {
+    .herosect h1 {
+        font-size: 44px;
+        max-width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+footer.footer {
+    background: #EEF4EC;
+}
+
+.footer__top {
+    padding: 80px 0 70px;
+
+    .footer__logo {
+        img {
+            max-width: 280px;
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+}
+
+.footer__box {
+    .title {
+        margin-bottom: 25px;
+
+        span {
+            font-family: "interstate";
+            font-size: 25px;
+            line-height: 115%;
+            color: rgba(43, 60, 21, 1);
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 100%;
+                background: rgba(43, 60, 21, 1);
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background: url('../img/general/footer-arr.svg') no-repeat center / 100%;
+                position: absolute;
+                left: -22px;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+
+
+    }
+
+    ul {
+        li {
+            margin-bottom: 3px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: $secondary;
+                font-size: 14px;
+                line-height: 130%;
+
+                &.socimg {
+                    margin-top: 10px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.footer__bottsect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82px;
+    background: rgba(139, 197, 63, 1);
+
+    p {
+        margin: 0;
+        text-align: center;
+        color: rgba(43, 60, 21, 1);
+        font-size: 14px;
+    }
+}
+
+
+
+
+@media(max-width:1599.8px) {
+    .footer__top {
+        padding: 60px 0 50px;
+    }
+
+    .footer__box .title span {
+        font-size: 22px;
+    }
+
+    .footer__box .title {
+        margin-bottom: 15px;
+    }
+
+    .footer__bottsect {
+        height: 70px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .col-xl-4 {
+        text-align: center;
+
+        .footer__logo {
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+    }
+}
+// ----------------------------
+@media(max-width:767.8px) {
+    .footer__box {
+        margin-bottom: 30px;
+    }
+
+    .footer__top {
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .secttitle {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,439 @@
+.welcsection.welcsection__green {
+    background: rgba(226, 240, 207, 1);
+
+    .col-lg-6:nth-child(2) {
+        justify-content: flex-start;
+    }
+}
+
+.sinfosect {
+    padding: 150px 0 0 0;
+
+    .descr {
+        max-width: 460px;
+
+        p {
+            font-size: 18px;
+            color: $secondary;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.w100 {
+            max-width: 100%;
+        }
+    }
+
+    img {
+        border-radius: 4px;
+    }
+}
+
+.sinfosect__block {
+    background: #EEF4EC;
+    padding: 30px;
+    margin-bottom: 20px;
+    min-height: 300px;
+
+    p {
+        font-size: 18px;
+        color: $secondary;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .title {
+        font-family: "interstate";
+        font-weight: 600;
+        font-size: 25px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        position: relative;
+        text-transform: capitalize;
+        color: rgba(43, 60, 21, 1);
+
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 3px;
+            width: 60px;
+            background: $tertiary;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: rgb(103, 103, 103);
+    }
+}
+
+.countsect {
+    margin: 40px 0 60px;
+}
+
+.countsect__title {
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    position: relative;
+    font-family: "interstate";
+    font-weight: 600;
+    color: rgba(43, 60, 21, 1);
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 115%;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 4px;
+        width: 120px;
+        background: $tertiary;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+
+}
+
+.countsect__box {
+    display: flex;
+    flex-wrap: wrap;
+
+    .imgwrap {
+        width: 100%;
+        max-width: 74px;
+        flex: 0 0 74px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .description {
+        width: 100%;
+        max-width: calc(100% - 74px);
+        flex: 0 0 calc(100% - 74px);
+        padding-left: 25px;
+
+        h6 {
+            margin-bottom: 15px;
+            font-family: "interstate";
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 115%;
+            text-transform: capitalize;
+            color: rgba(43, 60, 21, 1);
+        }
+
+        p {
+            font-size: 18px;
+            color: $secondary;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: rgb(103, 103, 103);
+        }
+    }
+}
+
+.contactblock {
+    margin: 80px 0 130px;
+}
+
+.contactblockwrap {
+    padding: 60px 74px;
+    position: relative;
+    background: $secondary;
+    border-radius: 4px;
+
+    .linebg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.2;
+        height: 100%;
+    }
+}
+
+.contactblock__descr {
+    max-width: 746px;
+
+    .title {
+        color: #fff;
+        font-family: "interstate";
+        font-weight: 600;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        font-size: 55px;
+        position: relative;
+        padding-bottom: 15px;
+        line-height: 115%;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 4px;
+            width: 120px;
+            background: rgba(139, 197, 63, 1);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    .descr {
+        margin-bottom: 40px;
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}
+
+.sinfosectab {
+    padding: 130px 0;
+}
+
+.sinfosectab {
+    .secttitle {
+        margin-bottom: 60px;
+    }
+
+    .descr p {
+        font-size: 18px;
+        color: $secondary;
+    }
+
+    .intermediate-box {
+        margin: 60px 0;
+
+        .subtitle {
+            font-family: "interstate";
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: rgba(43, 60, 21, 1);
+            font-size: 25px;
+            line-height: 115%;
+            text-transform: capitalize;
+        }
+
+        .descr {
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .boxtitle {
+        margin-bottom: 30px;
+        position: relative;
+        font-family: "interstate";
+        font-weight: 600;
+        padding-bottom: 15px;
+        color: rgb(43, 60, 21);
+        font-size: 40px;
+        line-height: normal;
+        text-transform: capitalize;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            width: 120px;
+            background: rgb(197, 63, 139);
+        }
+    }
+}
+
+
+@media(max-width:1599.8px) {
+    .sinfosect {
+        padding: 100px 0 0 0;
+    }
+
+    .contactblock {
+        margin-bottom: 100px;
+    }
+
+    .sinfosectab {
+        padding: 100px 0;
+    }
+
+    .sinfosect .descr p,
+    .sinfosect__block p,
+    .countsect__box .description p,
+    .contactblock__descr .descr p,
+    .sinfosectab .descr p {
+
+        font-size: 16px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .contactblock__descr {
+        position: relative;
+        z-index: 2;
+    }
+
+    .sinfosect {
+        padding: 70px 0 50px;
+    }
+
+    .sinfosect {
+        .secttitle {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .sinfosect .descr {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .countsect__title,
+    .sinfosectab .boxtitle {
+        font-size: 32px;
+    }
+
+    .countsect .col-lg-4 {
+        .countsect__box {
+            margin-bottom: 30px;
+        }
+
+        &:last-child .countsect__box {
+            margin-bottom: 0;
+        }
+    }
+
+    .sinfosect img {
+        width: 100%;
+    }
+
+    .contactblock {
+        margin: 60px 0;
+    }
+
+    .sinfosectab {
+        padding: 70px 0;
+    }
+
+    .sinfosectab .imgwrap img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .welcsection.welcsection__green {
+        .welcsection__img {
+            padding-bottom: 0;
+        }
+
+        .welcsection__left {
+            padding-top: 80px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .welcsection__img img {
+            max-width: 100%;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+
+    }
+
+    .sinfosect {
+        padding: 60px 0 40px;
+    }
+
+    .sinfosect__block {
+        padding: 20px;
+        min-height: initial;
+    }
+
+    .countsect__title,
+    .sinfosectab .boxtitle {
+        font-size: 24px;
+    }
+
+    .countsect__box .imgwrap {
+        max-width: 44px;
+        flex: 0 0 44px;
+    }
+
+    .countsect__box .description {
+        max-width: calc(100% - 44px);
+        flex: 0 0 calc(100% - 44px);
+    }
+
+    .countsect__box .description {
+        padding-left: 10px;
+    }
+
+    .countsect__box .description h6 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .countsect__title {
+        margin-bottom: 20px;
+    }
+
+    .contactblockwrap {
+        padding: 20px;
+    }
+
+    .contactblock__descr .title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .contactblockwrap {
+        overflow: hidden;
+        position: relative;
+
+        .linebg {
+            right: -200px;
+        }
+    }
+
+    .sinfosectab {
+        padding: 50px 0;
+    }
+
+    .sinfosectab .descr p:last-child {
+        margin-bottom: 0;
+    }
+
+}

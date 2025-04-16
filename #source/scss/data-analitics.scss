@@ -1,0 +1,212 @@
+.dainfosection {
+    padding: 150px 0 60px;
+
+    .secttitle {
+        margin-bottom: 60px;
+    }
+}
+
+.dainfosection__description {
+    .title {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 25px;
+        font-family: "interstate";
+        margin-bottom: 15px;
+        color: rgba(43, 60, 21, 1);
+    }
+
+    p {
+        color: $secondary;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .dainfosection__checklist {
+        margin-top: 60px;
+    }
+}
+
+.dainfosection__checklist {
+    position: relative;
+    max-width: 680px;
+
+    li {
+        position: relative;
+        padding-left: 99px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 74px;
+            height: 74px;
+            background: url('../img/dataanilitics/pinkcheck.png') no-repeat center / 100% 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+
+        .item-title {
+            margin-bottom: 15px;
+            color: rgba(43, 60, 21, 1);
+            text-transform: capitalize;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: "interstate";
+        }
+
+        p {
+            color: $secondary;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background: url('../img/dataanilitics/listliene.png') no-repeat center / 100% auto;
+            width: 1.5px;
+            height: 100%;
+            position: absolute;
+            left: 37px;
+            top: calc(50% + 30px);
+
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.dapicrsect {
+    padding: 80px 0;
+
+    .dapicrinfo {
+        p {
+            color: $secondary;
+
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .title {
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-family: "interstate";
+            color: rgba(43, 60, 21, 1);
+            font-size: 40px;
+            position: relative;
+            line-height: normal;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 4px;
+                width: 120px;
+                background: $tertiary;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .text-center {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:1599.8px) {
+    .dainfosection {
+        padding: 100px 0 60px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .dainfosection {
+        padding: 70px 0 50px;
+    }
+
+    .dainfosection .secttitle {
+        margin-bottom: 40px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .dapicrsect {
+        .imgwrap.d-flex.justify-content-end {
+            justify-content: center !important;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .dapicrsect,
+    .dainfosection {
+
+        padding: 60px 0 40px;
+    }
+
+    .welcsection.welcsection__green .welcsection__left {
+        padding-top: 60px;
+    }
+
+    .dainfosection__checklist li:before {
+        width: 46px;
+        height: 46px;
+        top: 0;
+        transform: none;
+    }
+
+    .dainfosection__checklist li {
+        padding-left: 65px;
+    }
+
+    .dainfosection__checklist li:after {
+        top: 23px;
+        left: 23px;
+    }
+
+    .dainfosection__description .title,
+    .dainfosection__checklist li .item-title {
+        font-size: 21px;
+    }
+
+    .dainfosection__description .dainfosection__checklist {
+        margin-top: 40px;
+    }
+
+    .dainfosection__checklist li .item-title {
+        margin-bottom: 10px;
+    }
+
+    .dapicrsect .dapicrinfo .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+}
